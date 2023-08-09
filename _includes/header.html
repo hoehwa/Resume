@@ -1,8 +1,8 @@
 <div id="particles-js">
   <div class="header">
       <h1>
-        <span class="site-title">{{ site.username }}</span>
-        <span class="site-description">{{ site.user_title }}</span>
+        <span class="site-title">{{ site.space_name }}</span>
+        <span class="site-description">{{ site.space_title }}</span>
       </h1>
       <div class="header-icons">
         {% if site.email %}
@@ -22,6 +22,9 @@
         {% endif %}
         {% if site.github_username %}
         <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.github_cli_repo %}
+        <a aria-label="My Cli Repo" target="_blank" href="https://github.com/{{ site.github_cli_repo }}"><i class="icon fa fa-terminal" aria-hidden="true"></i></a>
         {% endif %}
         {% if site.medium_username %}
         <a aria-label="My Medium" target="_blank" href="https://medium.com/{{ site.medium_username }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
