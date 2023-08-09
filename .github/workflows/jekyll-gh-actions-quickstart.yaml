@@ -17,6 +17,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs#overview
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
